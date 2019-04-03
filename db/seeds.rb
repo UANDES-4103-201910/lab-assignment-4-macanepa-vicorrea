@@ -25,19 +25,19 @@ for u in users do
   u.save!
 end 
 
-event_venues = [EventVenue.new(name: 'Estadio Nacional', address:'Maraton', capacity: 60000),\
-                EventVenue.new(name: 'Estadio Monumental', address:'Exequiel', capacity: 25000),\
-                EventVenue.new(name: 'Movistar Arena', address:'Matta', capacity: 15000)]
+event_venues = [EventVenue.new(name: 'Estadio Nacional----------------', address:'Maraton', capacity: 60000),\
+                EventVenue.new(name: 'Estadio Monumental------------------', address:'Exequiel', capacity: 25000),\
+                EventVenue.new(name: 'Movistar Arena------------------', address:'Matta', capacity: 15000)]
                 
 for ev in event_venues do
   ev.save!
 end 
 
-events = [Event.new(name:'Festival de la Cancion', description: 'Puro reggaeton',\
+events = [Event.new(name:'Festival de la Cancion-----------------', description: 'Puro reggaeton',\
           start_date: '2019-03-01', event_venue: event_venues[0]),
-          Event.new(name:'Twisted Sister', description: 'Puro rock',\
+          Event.new(name:'Twisted Sister----------------------', description: 'Puro rock',\
           start_date: '2019-04-01', event_venue: event_venues[1]),
-          Event.new(name:'Bad Bunny', description: 'Puro Trap',\
+          Event.new(name:'Bad Bunny-------------------------', description: 'Puro Trap',\
           start_date: '2019-05-01', event_venue: event_venues[2])]
 
 for e in events do
